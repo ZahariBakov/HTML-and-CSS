@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Tables</title>
 </head>
 <body>
     <h1>Table example</h1>
@@ -117,6 +118,73 @@
             <td>Hen</td>
             <td>Rooster</td>
         </tr>
+    </table>
+
+    <h3>Example 5</h3>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Original URL</th>
+                <th>Visits</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td><a href="https://nakov.com" target="_blank">https://nakov.com</a></td>
+                <td>160</td>
+            </tr>
+            <tr>
+                <td><a href="https://selenium.dev" target="_blank">https://selenium.dev</a></td>
+                <td>43</td>
+            </tr>
+            <tr>
+                <td><a href="https://nodjes.org" target="_blank">https://nodjes.org</a></td>
+                <td>86</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>Total visits</td>
+                <td>289</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h3>Example 5</h3>
+
+    <table class="style">
+        <thead>
+            <tr>
+                <th>Original URL</th>
+                <th>Short URL</th>
+                <th>Date Created</th>
+                <th>Visits</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td><a href="https://nakov.com" target="_blank">https://nakov.com</a></td>
+                <td><a class="shorturl" href="http://shorturl.nakov.repl.co/go/nak">http://shorturl.nakov.repl.co/go/nak</a></td>
+                <td>2021-02-17 14:41:33</td>
+                <td>160</td>
+            </tr>
+            <tr>
+                <td><a href="https://selenium.dev" target="_blank">https://selenium.dev</a></td>
+                <td><a class="shorturl" href="http://shorturl.nakov.repl.co/go/seldev">http://shorturl.nakov.repl.co/go/seldev</a></td>
+                <td>2021-02-17 22:07:08</td>
+                <td>43</td>
+            </tr>
+            <tr>
+                <td><a href="https://nodjes.org" target="_blank">https://nodjes.org</a></td>
+                <td><a class="shorturl" href="http://shorturl.nakov.repl.co/go/node">http://shorturl.nakov.repl.co/go/node</a></td>
+                <td>2021-02-19 16:41:56</td>
+                <td>86</td>
+            </tr>
+        </tbody>
     </table>
 </body>
 </html>
