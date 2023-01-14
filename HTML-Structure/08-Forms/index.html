@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>FORMS</h1>
+
+    <form action="submitet.html" method="get">
+        <div>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text">
+        </div>
+
+        <div>
+            <label for="pass">Password</label>
+            <input id="pass" name="pass" type="password">
+        </div>
+
+        <div>
+            <h2>Select a car brand</h2>
+            <label for="volvo">Volvo</label>
+            <input id="volvo" type="checkbox" value="VOLVO" name="brand">
+
+            <label for="bmw">BMW</label>
+            <input id="bmw" type="checkbox" value="BMW" name="brand">
+
+            <label for="audi">Audi</label>
+            <input id="audi" type="checkbox" value="AUDI"name="brand">
+        </div>
+
+        <div>
+            <h2>Select a location</h2>
+            <label for="de">Germany</label>
+            <input id="de" type="radio" name="location" value="DE">
+
+            <label for="bg">Bulgaria</label>
+            <input id="bg" type="radio" name="location" value="BG">
+
+            <label for="fr">France</label>
+            <input id="fr" type="radio" name="location" value="FR">
+        </div>
+
+        <button>Submit</button>
+    </form>
+
+    <form action="">
+        <fieldset>
+            <legend>Customer Details</legend>
+            <input type="text" name="fname">
+            <input type="text" name="lname">
+        </fieldset>
+
+        <fieldset>
+            <legend>Order Details</legend>
+            <input type="text" name="quantity">
+            <textarea name="remarks" id="" cols="30" rows="1"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <label for="field_age">Age</label>
+            <input type="number" name="age" id="field_age" min="18" max="99" value="21">
+
+            <label for="field_sat">Satisfaction</label>
+            <input type="range" name="satisfaction" min="1" max="5" value="3" id="field_sat"> (1-5)
+        </fieldset>
+    </form>
+
+    <form action="">
+        <label for="size">Size:</label>
+        <select name="size" id="size">
+            <option value="39">39 EU</option>
+            <option value="40">40 EU</option>
+            <option value="41">41 EU</option>
+            <option value="41.5">41.5 EU</option>
+            <option value="42">42 EU</option>
+            <option value="42.5">42.5 EU</option>
+            <option value="43">43 EU</option>
+            <option value="43.5">43.5 EU</option>
+            <option value="44">44 EU</option>
+            <option value="44.5">44.5 EU</option>
+            <option value="45">45 EU</option>
+            <option value="45.5">45.5 EU</option>
+            <option value="46">46 EU</option>
+        </select>
+    </form>
+
+    <form action="">
+        <div>
+            <div>
+                <label for="msg">Message</label>
+            </div>
+            <textarea name="msg" id="msg" cols="40" rows="10"></textarea>
+        </div>
+
+        <button>Submit <b>text</b></button>
+
+        <input type="submit" value="XYZ">
+    </form>
+</body>
+</html>
