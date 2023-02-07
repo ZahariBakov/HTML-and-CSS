@@ -36,7 +36,7 @@ html {
 .container .notes {
     display: flex;
     flex-direction: column;
-    justify-content: stretch;
+
     text-align: center;
 }
 
