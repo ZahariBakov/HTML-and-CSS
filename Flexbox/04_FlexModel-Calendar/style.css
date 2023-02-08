@@ -19,7 +19,6 @@ html {
     flex: auto;
     height: 4rem;
     width: 15%;
-    flex-wrap: nowrap;
 }
 
 .week span:nth-child(1), 
