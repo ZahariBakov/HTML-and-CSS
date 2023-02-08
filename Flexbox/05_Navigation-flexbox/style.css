@@ -1,0 +1,26 @@
+body {
+    padding: 24px;
+}
+
+header {
+    display: flex;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    gap: 24px;
+    list-style-type: none;
+    margin-right: 12px;
+}
+
+a {
+    display: flex;
+    text-decoration: none;
+    color: rgb(0, 153, 0)
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
