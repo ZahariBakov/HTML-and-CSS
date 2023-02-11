@@ -1,0 +1,68 @@
+body {
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h2 {
+    width: 70vw;
+}
+
+.masonry {
+    width: 70vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 24px;
+    width: 70vw;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid lightgray;
+    width: 320px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.masonry .card {
+    display: inline-block;
+}
+
+.flex .card {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 100%;
+}
+
+section p,
+footer p,
+h3 {
+    margin-left: 18px;
+    margin-right: 18px;
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.5;
+}
+section p {
+    margin-top: 0px;
+}
+
+section h3 {
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+
+footer {
+    border-top: 1px solid lightgray;
+}
