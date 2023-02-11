@@ -27,6 +27,7 @@
 
 .container .week span {
     width: 20%;
+    height: 25%;
 }
 
 .container .week span:nth-child(1),
