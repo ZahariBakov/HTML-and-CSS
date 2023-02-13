@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Raleway", sans-serif;
+    justify-content: center;
+    padding-top: 32px;
+}
+
+section {
+    width: 95vw;
+    background-color: #efefef;
+    height: 80vh;
+    position: relative;
+    margin-bottom: 32px;
+
+}
+
+.first-section nav ul li {
+    position: absolute;
+    top: 24px;
+    right: 32px;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: none;
+}
+
+section p {
+    max-width: 470px;
+    margin-left: 88px;
+}
+
+section .name {
+    font-size: 40px;
+    font-weight: 200;
+    margin-top: 128px;
+    margin-bottom: 32px;
+}
+
+.first-section .text {
+    line-height: 2;
+    letter-spacing: 1.5;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.first-section img {
+    position: absolute;
+    bottom: 0px;
+    right: 128px;
+    width: 650px;
+}
+
+.second-section .name {
+    margin-left: 850px;
+}
+
+.second-section img {
+    position: absolute;
+    top: 64px;
+    left: 64px;
+    width: 500px;
+}
