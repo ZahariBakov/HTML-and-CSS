@@ -1,0 +1,61 @@
+body {
+    display: grid;
+    grid-template-columns: 100px auto;
+    grid-template-areas: 
+    "head head"
+    "aside main"
+    "aside main"
+    "foot foot";
+    gap: 12px;
+}
+
+header {
+    grid-area: head;
+}
+
+aside {
+    grid-area: aside;
+}
+
+aside ul {
+    padding-inline-start: unset;
+}
+
+aside li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    grid-area: main;
+
+}
+
+main li {
+    margin-bottom: 4px;
+}
+
+footer {
+    grid-area: foot;
+    
+}
+
+header,
+aside,
+main,
+footer {
+    background-color: #a9d9ff;
+    padding-left: 8px;
+}
+@media (max-width: 500px) {
+    body {
+        grid-template-areas: 
+        "head head"
+        "aside aside"
+        "main main"
+        "foot foot";
+    }
+}
