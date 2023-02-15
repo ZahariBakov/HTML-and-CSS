@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    background-color: black;
+    align-items: center;
+}
+
+section {
+    height: 80vh;
+    background-color: white;
+    padding: 24px 88px;
+}
+
+section div {
+    display: inline-block;
+    width: 45%;
+}
