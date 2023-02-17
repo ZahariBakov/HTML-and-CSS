@@ -1,0 +1,286 @@
+body {
+    background-color: #fcfcfc;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.divider {
+    border: 1px solid black;
+    width: 88px;
+    display: inline-block;
+    margin-bottom: 24px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.cards .card {
+    align-items: center;
+}
+
+.cards .card h3 {
+    font-size: 16px;
+}
+
+.cards .card img {
+    display: inline-block;
+}
+
+.cards .card .position {
+    margin-bottom: 12px;
+}
+
+/* Header */
+
+header {
+    width: 70vw;
+    margin: 24px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-menu {
+    display: none;
+}
+
+header h2 {
+    color: #8e007d;
+}
+
+header p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+header nav ul {
+    display: flex;
+    gap: 32px;
+}
+
+header nav ul a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+/* Main */
+
+/* Need a Website - section */
+
+.need-a-website {
+    width: 60vw;
+    margin: 80px auto;
+    display: flex;
+}
+
+.content {
+    width: 70%;
+    letter-spacing: 1px;
+    padding-right: 48px;
+}
+
+.need-a-website h2 {
+    margin-bottom: 12px;
+}
+
+.need-a-website p {
+    margin-bottom: 12px;
+}
+
+.bordered-text {
+    display: inline-block;
+    padding: 4px 16px;
+    border: 1px solid black;
+    letter-spacing: 0;
+    border-radius: 3px;
+}
+
+.need-a-website i {
+    color: black;
+    font-size: 150px;
+}
+
+
+/* Team and Testimonials - section */
+
+.team,
+.testimonials {
+    width: 60vw;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.testimonials p {
+    margin-bottom: 24px;
+}
+
+
+/* Newsletter - section */
+
+.newsletter {
+    background-color: #713179;
+    text-align: center;
+    margin-bottom: 36px;
+    padding: 36px;
+}
+
+.newsletter h2 {
+    color: white;
+}
+
+.newsletter input {
+    width: 320px;
+    height: 36px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.newsletter .subs {
+    font-size: 14px;
+    font-weight: 600;
+    height: 36px;
+    width: 120px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+
+/* Div - shadow */
+
+.shadow {
+    border: 1px solid #e4e4e4;
+    box-shadow: 1px 8px 15px #888888;
+    margin-bottom: 32px;
+}
+
+
+/* Footer - section */
+
+footer {
+    width: 60vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 24px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+footer div {
+    display: inline-block;
+}
+
+.name p {
+    font-weight: 600;
+}
+
+.sitemap {
+    margin-left: 24px;
+}
+
+.sitemap ul {
+    display: grid;
+    align-items: center;
+    grid-template-areas: 
+    "home about"
+    "services blog"
+    "contacts terms"
+    "privacy .";
+}
+
+.sitemap .home {
+    grid-area: home;
+}
+
+.sitemap .about {
+    grid-area: about;
+}
+
+.sitemap .services {
+    grid-area: services;
+}
+
+.sitemap .blog {
+    grid-area: blog;
+}
+
+.sitemap .contacts {
+    grid-area: contacts;
+}
+
+.sitemap .terms {
+    grid-area: terms;
+}
+
+.sitemap .privacy {
+    grid-area: privacy;
+}
+
+.contacts p {
+    display: inline;
+    padding-left: 8px;
+    font-weight: 600;
+}
+
+
+/* Responsive Design */
+
+@media (max-width:1024px){
+    header{
+        margin: 10px 50px;
+    }
+    .need-a-website{
+        margin: 10px 100px;
+    }
+    .team, .testimonials{
+        margin: 10px 50px;
+    }
+    footer{
+        padding: 50px 50px 50px; 
+    }
+}
+@media (max-width:768px){
+    header nav {
+        display: none;
+    }
+    .header-menu {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap:5px;
+      font-weight: 700;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    footer {
+        display: flex;
+        flex-direction: column; 
+        gap:20px;
+    }
+}
+@media (max-width:360px){
+    header {
+        margin: 10px 20px;
+    }
+    .need-a-website {
+        margin: 10px 40px;
+    }
+    .team, .testimonials {
+        margin: 10px 20px;
+    }
+    footer{
+        padding: 20px 20px 20px; 
+    }
+}
