@@ -1,16 +1,48 @@
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
 body {
-    display: flex;
     background-color: black;
-    align-items: center;
+    height: 80vh;
+    margin-top: 80px;
+}
+
+h1,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    margin-bottom: 24px;
+    font-weight: 500;
+}
+
+p {
+    margin-bottom: 12px;
+    color: #949494;
 }
 
 section {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
     height: 80vh;
     background-color: white;
-    padding: 24px 88px;
+    padding: 48px 80px;
 }
 
-section div {
-    display: inline-block;
-    width: 45%;
+.text {
+    width: 50%;
+}
+
+li {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+li img {
+    width: 10%;
 }
