@@ -1,0 +1,11 @@
+@media (max-width: 600px) {
+    .w3-row .w3-col.m6.w3-padding-large,
+    .w3-right {
+        display: none;
+    }
+    
+    .w3-col.m6,
+    .w3-col.l6 {
+        width: 100%;
+    }
+}
