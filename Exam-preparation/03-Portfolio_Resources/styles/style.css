@@ -1,62 +1,210 @@
+:root {
+    --grey-light: #efefef;
+    --grey-dark: #909090;
+    --grey-black: #222222;
+}
+
+
+/* Global styles */
+
 body {
-    display: flex;
-    flex-wrap: wrap;
     font-family: "Raleway", sans-serif;
-    justify-content: center;
-    padding-top: 32px;
+    color: var(--grey-black);
 }
 
 section {
-    width: 95vw;
-    background-color: #efefef;
-    height: 80vh;
+    max-width: 95vw;
+    margin: 1.75rem auto;
+    background-color: var(--grey-light);
+    height: calc(100vh - 3.5rem);
+    padding: 3rem 5rem;
+    overflow: hidden; 
+}
+
+.page-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-section .section-info {
+    flex: 0 0 50%;
+}
+
+.page-section .section-img {
+    flex: 0 1 35%;
+}
+
+.title {
+    font-weight: normal;
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.desc {
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+.page-section .divider.vertical {
+    height: 5rem;
+    width: 1px;
+    background-color: var(--grey-black);
+}
+
+
+/* Hero - section */
+
+#hero  .page-section {
     position: relative;
-    margin-bottom: 32px;
-
 }
 
-.first-section nav ul li {
+#hero .navigation {
     position: absolute;
-    top: 24px;
-    right: 32px;
-    display: inline-block;
-    text-decoration: none;
-    text-transform: none;
+    top: 3rem;
+    right: 3rem;
 }
 
-section p {
-    max-width: 470px;
-    margin-left: 88px;
+#hero .hero-img {
+    position: absolute;
+    width: 40%;
+    bottom: 1.75rem;
+    right: 5rem;
 }
 
-section .name {
-    font-size: 40px;
-    font-weight: 200;
-    margin-top: 128px;
-    margin-bottom: 32px;
+.page-section .left {
+    width: 67%;
 }
 
-.first-section .text {
-    line-height: 2;
-    letter-spacing: 1.5;
+
+/* Camera - section */
+
+#camera .socials {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+#camera .socials .social {
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--grey-dark);
+    color: white;
+    position: relative;
+}
+
+#camera .socials .social i {
+    font-size: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* thumb-bg - section */
+
+.pade-background {
+    padding: unset;
+}
+
+.background-img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* Stairs - section */
+
+#stairs .section-img {
+    width: 50%;
+}
+
+
+/* Gallery - section */
+
+
+#gallery {
+    display: flex;
+    align-items: center;
+}
+
+#gallery .list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+#gallery .list .picture:hover {
+    transform: scale(1.5);
+    transition: transform 300ms ease-in-out;
+}
+
+
+/* Contacts - section */
+
+#contacts {
+    text-align: center;
+    position: relative;
+}
+
+#contacts .desc {
+    max-width: 70%;
+}
+
+#contacts .form {
+    max-width: 50%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    grid-template-areas: 
+    "email subject"
+    "msg msg"
+    "btn btn";
+}
+
+#contacts .form input,
+#contacts .form textarea {
+    background-color: transparent;
+    border: 1px solid var(--grey-black);
+    padding: 0.5rem;
+    width: 100%;
+}
+
+#contacts .form textarea {
+    resize: none;
+}
+
+#contacts .form .btn {
+    width: 100%;
+    padding: 0.5rem;
+    text-align: center;
+    border: 1px solid var(--grey-black);
+    background-color: var(--grey-black);
+    color: white;
+}
+
+#contacts .form .email {
+    grid-area: email;
+}
+
+#contacts .form .subject {
+    grid-area: subject;
+}
+
+#contacts .form .msg {
+    grid-area: msg;
+}
+
+#contacts .form .btn {
+    grid-area: btn;
+}
+
+.footer {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 46%;
     font-size: 14px;
-    font-weight: 500;
-}
-
-.first-section img {
-    position: absolute;
-    bottom: 0px;
-    right: 128px;
-    width: 650px;
-}
-
-.second-section .name {
-    margin-left: 850px;
-}
-
-.second-section img {
-    position: absolute;
-    top: 64px;
-    left: 64px;
-    width: 500px;
 }
