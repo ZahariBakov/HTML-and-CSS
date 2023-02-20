@@ -1,0 +1,158 @@
+:root {
+    --clr-btn-brown: #3e010e;
+    --clr-white: #fff;
+    --clr-black: #222;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Header */
+
+header {
+    padding-bottom: -20vh;
+}
+
+.navigation {
+    width: 55vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 12px;
+}
+
+.navigation h3 {
+    font-size: 28px;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: var(--clr-black);
+    margin-left: 24px;
+}
+
+header ul li a:hover {
+    background-color: var(--clr-btn-brown);
+    color: var(--clr-white);
+    margin-top: 32px;
+    border: none;
+    border-radius: 24px;
+    padding: 4px 32px;
+    transition: transform 500ms ease-in-out;
+}
+
+header .hero-bg {
+    position: absolute;
+    width: 100vw;
+    height: 85vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero {
+    width: 55vw;
+    margin: 0 auto;
+    padding: 9% 0;
+}
+
+.hero .title {
+    font-size: 46px;
+}
+
+.hero .subtitle {
+    font-size: 25px;
+    font-weight: 500;
+    padding-bottom: 24px;
+}
+
+.hero .desc {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.btn {
+    background-color: var(--clr-btn-brown);
+    color: var(--clr-white);
+    margin-top: 32px;
+    border: none;
+    border-radius: 24px;
+    padding: 4px 32px;
+}
+
+
+/* Main */
+
+main {
+    text-align: center;
+}
+
+main .main-subtitle {
+    padding-bottom: 24px;
+}
+
+main .card-container {
+    width: 60vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin-bottom: 64px;
+}
+
+main .card-container .card img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+main .card-container .card p {
+    font-size: 14px;
+}
+
+main .card-container .card .card-btn {
+    margin: 24px;
+    padding: 8px 16px;
+    background-color: var(--clr-white);
+    border: 1px solid var(--clr-black);
+    border-radius: 24px;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: black;
+    color: var(--clr-white);
+}
+
+.foot-container {
+    width: 60vw;
+    height: 30vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer ul li {
+    padding-bottom: 12px;
+}
+
+footer .follow p {
+    padding-bottom: 8px;
+}
+
+footer .icons {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
