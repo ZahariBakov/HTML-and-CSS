@@ -1,3 +1,53 @@
 .timeline {
     border: 0.3rem solid rgb(153, 153, 153);
+    width: 95vw;
+    margin: 0 auto;
+}
+
+h3 {
+    font-style: italic;
+}
+
+header {
+    text-align: center;
+    padding-top: 24px;
+}
+
+h1 {
+    border: 0.1rem solid rgb(153, 153, 153);
+    display: inline-block;
+    padding: 4px 16px;
+    font-size: 16px;
+}
+
+article {
+    width: 45vw;
+}
+
+.left-side {
+    float: left;
+    text-align: right;
+}
+
+.left-side h3 {
+    text-align: right;
+}
+
+.right-side {
+    float: right;
+    text-align: left;
+}
+
+.right-side h3 {
+    text-align: left;
+}
+
+h3 {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+p,
+li {
+    font-size: 20px;
 }
